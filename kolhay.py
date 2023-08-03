@@ -9,7 +9,7 @@ class KolHayStation(RadioStation):
         self._program_list: List[str] = []
 
     def load_programs(self) -> List[str]:
-        html_content = utils.get_site_page("https://www.93fm.co.il/radio/broadcast/")
+        html_content = utils.fetch_url("https://www.93fm.co.il/radio/broadcast/")
         nodes = utils.extract_node(html_content, "//select[@class='program-name']/option")
 
         self._program_list = [program.inner_text for program in nodes[1:]]
@@ -24,16 +24,16 @@ class KolHayStation(RadioStation):
         # Achive the program page
         program_name = self._get_program_name(program)
         search_url = f"https://www.93fm.co.il/radio/broadcast/?program-name={program_name}"
-        html_content = utils.get_site_page(search_url)
+        html_content = utils.fetch_url(search_url)
         nodes = utils.extract_node(html_content, "//div[@class='list']/ul/li/a")
         if len(nodes) < 1:
             return []
         
-        html_content = utils.get_site_page(nodes[0].href)
+        html_content = utils.fetch_url(nodes[0].href)
         nodes = utils.extract_node(html_content, "//p[@id='breadcrumbs']/span/span/a")
 
         # This is program page
-        html_content = utils.get_site_page(nodes[len(nodes) - 1].href)
+        html_content = utils.fetch_url(nodes[len(nodes) - 1].href)
 
         #Extract the program name
         match = re.search(r'/program/([^/]+)/', nodes[len(nodes) - 1].href)

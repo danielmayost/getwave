@@ -31,27 +31,10 @@ def parse_string(s: str) -> int | List[int] | str:
 
     return result
 
-def get_site_page(url: str, progress: ProgressCallback | None = None, expected: int=0) -> bytes:
-    response = requests.get(url, stream=progress is not None)
-    if response.status_code != 200:
-        print("Failed to fetch the page. Status code:", response.status_code)
-        exit(1)
-
-    if progress is None:
-        return response.content
-
-    total_size = int(response.headers.get('content-length', 0))
-    total_size = expected if total_size == 0 else total_size
-    block_size = 4096
-    content = b""
-
-    for chunk in response.iter_content(block_size):
-        content += chunk
-        progress(len(content), total_size)
-
-    progress(len(content), len(content))
-
-    return content
+def fetch_url(url: str) -> bytes:
+    response = requests.get(url)
+    response.raise_for_status()
+    return response.content
 
 def extract_node(html_content: bytes, xpath: str) -> List[HtmlNode]:
     tree = html.fromstring(html_content) # type: ignore

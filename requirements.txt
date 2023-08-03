@@ -8,6 +8,7 @@ charset-normalizer==3.2.0
 frozenlist==1.4.0
 idna==3.4
 lxml==4.9.3
+lxml-stubs==0.4.0
 markdown-it-py==3.0.0
 mdurl==0.1.2
 multidict==6.0.4
