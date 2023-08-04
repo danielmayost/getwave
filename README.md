@@ -9,7 +9,7 @@ As of now, it operates solely through the terminal, contributions for GUI integr
 - Supports Kol-Hay station (kol-barama site is [broken](http://archive.kol-barama.co.il/)).
 - Ability to download entire programs.
 
-![image](https://github.com/danielmayost/getwave/assets/41772276/eccd119d-7c71-482a-8a37-05f8dea331b8)
+![Screenshot 2023-08-04 112539](https://github.com/danielmayost/getwave/assets/41772276/65cdd2a5-c6ae-4bb0-a409-7f14549719cc)
 
 ## Usage
 **Note**: It's recommended to use a terminal that supports Hebrew (bidi) like 'Terminal' in Windows. Avoid using the older 'cmd' as it might reverse Hebrew letters.
