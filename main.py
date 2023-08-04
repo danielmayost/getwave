@@ -24,7 +24,7 @@ def setup_args() -> Namespace:
    parser.add_argument('-y', '--yes', action='store_true', help="Automatically confirm all prompts with 'yes'.", required=False)
    parser.add_argument('-o', '--output', type=str, default=os.getcwd(), help="The destination of downloaded broadcasts.", required=False)
    parser.add_argument('-pr', '--parallel', type=int, default=1, help="Indicates the number of files to be downloaded in parallel.", required=False)
-   parser.add_argument('-i', '--index', type=int, default=1, help="Indicates the start index ONLY for display.", required=False)
+   parser.add_argument('-i', '--index', type=int, default=1, help="Determine the start index ONLY for display.", required=False)
    return parser.parse_args()
 
 def get_input(prompt: str, arg: str | None = None) -> int | List[int] | str:
