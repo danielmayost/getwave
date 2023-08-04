@@ -26,7 +26,7 @@ jobs:
             python -m pip install -r requirements.txt
             
         - name: Publish exe
-        - run: pyinstaller --onefile main.py
+          run: pyinstaller --onefile main.py
         
         - name: Upload
           uses: actions/upload-artifact@v3
