@@ -27,13 +27,13 @@ jobs:
             python -m pip install -r requirements.txt
             
         - name: Publish exe
-          run: pyinstaller --onefile main.py
+          run: pyinstaller --onefile --name getwave main.py
         
         - name: Upload
           uses: actions/upload-artifact@v3
           with:
             name: my-artifact
-            path: dist/main.exe
+            path: dist/getwave.exe
 
         #- name: Publish Release
         #  uses: actions/upload-release-asset@v1
