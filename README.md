@@ -1,7 +1,7 @@
-# GetWawe
+# GetWave
 
 A radio broadcast downloader designed to simplify the downloading of broadcasts from Orthodox radio stations.
-As of now, it operates solely through the terminal, contributions for GUI are welcome.
+As of now, it operates solely through the terminal,contributions for a GUI are welcome.
 
 ## Features
 
@@ -16,7 +16,7 @@ As of now, it operates solely through the terminal, contributions for GUI are we
 
 - Download **getwave** from [here](https://github.com/danielmayost/getwave/releases)
 - Run the program from a Terminal.
-- Follow the instructions.
+- Follow the on-screen instructions.
 
 ### Pre-defined
 You can run the program with pre-defined arguments. For instance:
@@ -27,7 +27,7 @@ You can run the program with pre-defined arguments. For instance:
 - `--program 222` chooses program number 222.
 - `--broadcasts "2-5,8"` selects a range of broadcasts from 2 to 5, as well as broadcast 8.
 - `--yes` skips the confirmation prompt.
-- `--output "./dist"` designates the 'dist' folder for output files.
+- `--output "./dist"` specifies the 'dist' folder for output files.
 - `-pr 3` indicates that up to 3 files can be downloaded simultaneously.
 - `--index 5` determines the starting index for display and filenames.
 
