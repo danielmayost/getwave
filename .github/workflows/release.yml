@@ -8,7 +8,7 @@ on:
 
 permissions:
   contents: write
-  
+
 jobs:
   release:
     runs-on: windows-latest
@@ -29,6 +29,6 @@ jobs:
           run: pyinstaller --onefile --name getwave main.py
 
         - name: Release
-          uses: softprops/action-gh-release@v1
+          uses: softprops/action-gh-release@v0.1.15
           with:
             files: dist/getwave.exe
