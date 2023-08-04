@@ -1,7 +1,7 @@
 # GetWawe
 
 A radio broadcast downloader designed to simplify the downloading of broadcasts from Orthodox radio stations.
-As of now, it operates solely through the terminal, contributions for GUI integration are welcome.
+As of now, it operates solely through the terminal, contributions for GUI are welcome.
 
 ## Features
 
