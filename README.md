@@ -14,6 +14,7 @@ As of now, it operates solely through the terminal, contributions for GUI integr
 ## Usage
 **Note**: It's recommended to use a terminal that supports Hebrew (bidi) like 'Terminal' in Windows. Avoid using the older 'cmd' as it might reverse Hebrew letters.
 
+- Download **getwave** from [here](https://github.com/danielmayost/getwave/releases)
 - Run the program from a Terminal.
 - Follow the instructions.
 
