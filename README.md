@@ -1,10 +1,10 @@
 # GetWave
-
-A radio broadcast downloader designed to simplify the downloading of broadcasts from Orthodox radio stations.
+A radio broadcast downloader designed to simplify ddownloading broadcasts from Orthodox radio stations.
 As of now, it operates solely through the terminal, contributions for a GUI are welcome.
 
-## Features
+This is a small project I built to learn Python
 
+## Features
 - Quickly and efficiently download broadcasts.
 - Supports Kol-Hay station (kol-barama site is [broken](http://archive.kol-barama.co.il/)).
 - Ability to download entire programs.
@@ -25,7 +25,7 @@ You can run the program with pre-defined arguments. For instance:
 ```
 - `--station 1` selects station 1 (kol-hay).
 - `--program 222` chooses program number 222.
-- `--broadcasts "2-5,8"` selects a range of broadcasts from 2 to 5, as well as broadcast 8.
+- `--broadcasts "2-5,8"` selects a range of broadcasts from 2 to 5, as well as 8.
 - `--yes` skips the confirmation prompt.
 - `--output "./dist"` specifies the 'dist' folder for output files.
 - `-pr 3` indicates that up to 3 files can be downloaded simultaneously.
