@@ -2,7 +2,7 @@
 A radio broadcast downloader designed to simplify ddownloading broadcasts from Orthodox radio stations.
 As of now, it operates solely through the terminal, contributions for a GUI are welcome.
 
-This is a small project I built to learn Python
+This is a small project I built to learn Python.
 
 ## Features
 - Quickly and efficiently download broadcasts.
@@ -14,7 +14,7 @@ This is a small project I built to learn Python
 ## Usage
 **Note**: It's recommended to use a terminal that supports Hebrew (bidi) like 'Terminal' in Windows. Avoid using the old 'cmd' as it might reverse Hebrew letters.
 
-- Download **getwave** from [here](https://github.com/danielmayost/getwave/releases)
+- Download **getwave** from [here](https://github.com/danielmayost/getwave/releases).
 - Run the program from a Terminal.
 - Follow the on-screen instructions.
 
