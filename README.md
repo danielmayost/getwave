@@ -1,6 +1,6 @@
 # GetWave
 
-A radio broadcast downloader program to simplify the downloading of broadcasts from Orthodox radio stations.
+A radio broadcast downloader designed to simplify the downloading of broadcasts from Orthodox radio stations.
 As of now, it operates solely through the terminal, contributions for a GUI are welcome.
 
 ## Features
