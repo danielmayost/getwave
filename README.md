@@ -1,5 +1,5 @@
 # GetWave
-A radio broadcast downloader designed to simplify ddownloading broadcasts from Orthodox radio stations.
+A radio broadcast downloader designed to simplify downloading broadcasts from Orthodox radio stations.
 As of now, it operates solely through the terminal, contributions for a GUI are welcome.
 
 This is a small project I built to learn Python.
