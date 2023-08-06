@@ -12,7 +12,7 @@ This is a small project I built to learn Python.
 ![Screenshot 2023-08-04 112539](https://github.com/danielmayost/getwave/assets/41772276/65cdd2a5-c6ae-4bb0-a409-7f14549719cc)
 
 ## Usage
-**Note**: It's recommended to use a terminal that supports Hebrew (bidi) like 'Terminal' in Windows. Avoid using the old 'cmd' as it might reverse Hebrew letters.
+**Note**: It's recommended to use a terminal that supports Hebrew (bidi), like 'Terminal' in Windows, rather than old 'cmd' as it might reverse Hebrew letters.
 
 - Download **getwave** from [here](https://github.com/danielmayost/getwave/releases).
 - Run the program from a Terminal.
